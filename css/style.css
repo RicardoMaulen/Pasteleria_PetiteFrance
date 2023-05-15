@@ -1,0 +1,544 @@
+/**/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0%;
+
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+
+
+/*====================***********************menu de navegacion y portada GENERAL**************************************====================*/
+
+
+.cont-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background-image: linear-gradient(to right, blue,white,red);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.cont-menu .logo {
+  margin-left: 20px;
+}
+
+
+
+.cont-menu .logo{
+  position: relative;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+
+}
+
+.cont-menu .lista {
+  margin-right: 20px;
+  display: flex;
+
+}
+
+.cont-menu .lista li {
+  list-style: none;
+
+}
+
+.cont-menu .lista li a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: maroon;
+  border-radius: 15px;
+  padding: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+
+.cont-menu .lista li a:hover {
+  background-color: royalblue;
+}
+
+.cont-menu .lista li a.activo {
+  background-color: royalblue;
+  color: white;
+
+}
+
+.claro {
+  cursor: pointer;
+  margin-right: 3rem;
+}
+
+.cont-header .img-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/image/portada.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.cont-header .img-header .titulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.cont-header .img-header .titulo .bienveni {
+  font-size: 4rem;
+  color: rgb(53, 3, 3);
+  position: absolute;
+  bottom: 480px;
+}
+
+.cont-header .img-header .titulo .bienveni:hover {
+  color: blanchedalmond;
+}
+
+.cont-main {
+  margin-top: 2rem;
+
+}
+/*================***********************************FOOTER GENERAL*************************************=======================*/
+footer {
+  margin: 0%;
+  padding: 0%;
+  background-color: brown;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.redes_sociales {
+  display: flex;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.social {
+  margin: 0% 10px;
+}
+
+
+/*==============************************************ MAIN PAGINA INICIO *********************************************=================*/
+/*section historia*/
+.cont-main {
+  width: 100%;
+  height: 100%;
+  margin: 2rem 0;
+
+}
+
+.cont-main .historia .parrafo-historia {
+  margin: 1rem 3rem;
+}
+
+/*section los chef*************************************/
+.cont-main .losChef {
+  margin: 2rem 1rem;
+}
+
+
+.cont-main .losChef .cont-parrafo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-main .losChef .parrafo-chef {
+  margin: 3rem;
+
+}
+
+.cont-main .losChef .img-chef {
+  width: 400px;
+  height: auto;
+}
+
+.cont-main .losChef .cont-parrafo p span {
+  font-weight: 900;
+}
+
+/*section NOTICIAS*****************************/
+.cont-main .losChef .cont-parrafo .jsonNoticias{
+  display: none;
+}
+
+.cont-main .cont-noticias{
+  width: 100%;
+  height: auto;
+}
+
+.cont-main .cont-noticias h3{
+  font: size 2rem;
+  font-weight: 700;
+}
+
+.cont-main .cont-noticias #box{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  height: auto;
+}
+
+.cont-main .cont-noticias #box .noticia{
+  width: 380px;
+  box-shadow: 5 8 5;
+}
+
+.cont-main .cont-noticias #box .noticia img{
+  width: 380px;
+  height: auto;
+  
+}
+
+.cont-main .cont-noticias #box .noticia p span{
+  font-size: 1.5rem;
+  transition: .5s;
+
+}
+
+.cont-main .cont-noticias #box .noticia button{
+  text-decoration: none;
+  border-radius: 15px;
+  border-style: hidden;
+  box-shadow: 2px 2px 3px 2px;
+  padding: .2rem;
+  background: linear-gradient(to right,blue,white,red);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cont-main .cont-noticias #box .noticia button:hover{
+  color:forestgreen;
+}
+
+.cont-main .cont-noticias #box .noticia p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+/*youtube *****************************************/
+.cont-main .cont-youtube {
+  margin: 10px 30%;
+  
+}
+
+/*================************************************GALERIA*************************************************======================*/
+/*carrusel portada*/
+.cont-header .img-head{
+  width: 100%;
+
+}
+
+/*galeria de productos*/
+.cont-galeria {
+  background: rgba(94, 16, 16, 0.1);
+  padding-bottom: 2rem;
+}
+
+.preV {
+  text-align: center;
+
+}
+
+
+.r .carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  border: 1px solid maroon;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+
+
+}
+
+.descripcion {
+  margin: 10px 1rem;
+  width: 50%;
+
+}
+
+.t {
+  width: 50%;
+  height: auto;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+
+
+
+/*============********************************* PAAGINA PRESUPUESTO *********************************************==============*/
+
+.main-presupuesto {
+  margin: 2rem 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(39, 6, 6, 0.1);
+
+}
+
+#formulario {
+  width: 80%;
+
+}
+
+#formulario fieldset {
+  display: block;
+
+}
+
+fieldset .field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+label {
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+}
+
+.contacto {
+  font-size: 20px;
+  width: 50%;
+  margin-left: 5rem;
+  margin-bottom: .8rem;
+  border-style: double;
+}
+
+.main-presupuesto small {
+  background: maroon;
+  border-radius: .3rem;
+  padding: .3rem;
+  color: white;
+  margin-left: .3rem;
+  visibility: hidden;
+}
+
+.main-presupuesto .presu {
+  width: 100%;
+  height: auto;
+  
+}
+
+.main-presupuesto .field #select {
+  padding: .2rem;
+  margin-bottom: .5rem;
+}
+
+.main-presupuesto #date {
+  padding: .2rem;
+  margin-bottom: .5rem;
+}
+
+.main-presupuesto #plazo input {
+  padding: .2rem;
+}
+
+.main-presupuesto .extra .h4 {
+  font-size: 1.3rem;
+  margin-left: 25px;
+}
+
+.main-presupuesto .extra input {
+  margin: .5rem;
+  margin-left: 12%;
+
+}
+
+.main-presupuesto .extra label {
+  margin: 0%;
+}
+
+.main-presupuesto .total {
+  margin: 1rem;
+
+}
+
+.main-presupuesto .total .precio {
+  font-size: 1.2rem;
+}
+
+.main-presupuesto .field .condicion #condiciones {
+  margin: .5rem;
+  margin-left: 12%;
+}
+
+.main-presupuesto .field .condicion .radio {
+  margin: 0%;
+}
+
+.main-presupuesto .cont-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-presupuesto .cont-btn button {
+  margin: .5rem;
+  padding: .5rem;
+  border-radius: 10px;
+  border-style: groove;
+}
+
+.main-presupuesto .btn:hover {
+  background: maroon;
+  color: azure;
+  transition: .5s;
+}
+
+.form-control.success input,
+select {
+  border-color: green;
+}
+
+.form-control.success select {
+  border-color: green;
+}
+
+.form-control.error input,
+select {
+  border-color: maroon;
+}
+
+.form-control.error select {
+  border-color: maroon;
+  border-style: none;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+
+/*============***************************** PAAGINA CONTACTO ***********************************==============*/
+
+.contenedor-main {
+  width: 90%;
+  height: auto;
+}
+
+.h3-contacto{
+  font-size: 2rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contenedor-main a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin: 2rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: 0 0 rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+  margin-bottom: 60px;
+}
+
+#map {
+  height: 400px;
+  flex: 1;
+}
+
+
+@media (max-width: 760px){
+  .cont-main .losChef .cont-parrafo{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+    .cont-main .cont-youtube{
+      margin: 0% 2rem;
+      padding: 0%;
+
+    }
+
+  .cont-main .cont-youtube .youtube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+}
